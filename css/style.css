@@ -1,10 +1,13 @@
 :root {
     --color-primary: #E3B873;
+    --color-primary-15: rgba(227, 184, 115, 0.15);
     --color-primary-20: rgba(227, 184, 115, 0.2);
     --color-primary-30: rgba(227, 184, 115, 0.3);
     --color-primary-50: rgba(227, 184, 115, 0.5);
     --color-white: #FFFFFF;
+    --color-white-15: rgba(255, 255, 255, 0.15);
     --color-white-30: rgba(255, 255, 255, 0.3);
+    --color-white-50: rgba(255, 255, 255, 0.5);
     --color-gray: #363636;
     --color-gray-30: rgba(54, 54, 54, 0.3);
     --color-gray-50: rgba(54, 54, 54, 0.5);
@@ -588,3 +591,184 @@ body {
     z-index: 3;
 }
 /* || /Types of repair */
+
+/* || Request */
+.request {
+    height: 725px;
+    margin-top: 94px;
+    background-image: url(../images/request/request-steps-bg.png);
+    background-repeat: no-repeat;
+    background-position-y: -8rem;
+    padding-top: 34px;
+}
+
+.request .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.request .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.request__steps-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 473.62px;
+}
+
+.request__steps-list-item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 14px;
+    color: var(--color-gray);
+}
+
+.request__steps-list-item-marker {
+    /* Here I use content-box to make the border appear outside, not inside. */
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    box-shadow: 0 5px 15px var(--color-primary-15);
+    border: 8px solid var(--color-white);
+    border-radius: 50%;
+    color: white;
+    font-family: "Yeseva One";
+    font-size: 18px;
+    width: 41px;
+    height: 41px;
+}
+
+.request__form {
+    background: var(--color-black);
+    color: var(--color-white);
+    width: 506px;
+    height: 537px;
+    padding: 28px 49px 27px 49px;
+}
+
+.request__form-title {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.request__form-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    margin-top: 39px;
+}
+
+.request__form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.request__form-label {
+    color: var(--color-white-50);
+    font-size: 13px;
+}
+
+.request__form-input {
+    appearance: none;
+    padding: 0;
+    padding-bottom: 11px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-white-15);
+    color: var(--color-white);
+    font-size: 14px;
+}
+
+.request__form-input::placeholder {
+    color: var(--color-white);
+}
+
+.request__form-input:focus {
+    outline: none;
+    border-bottom-color: var(--color-white);
+}
+
+.request__form-checkbox-labelled {
+    margin-top: 16px;
+}
+
+.request__form-checkbox-label {
+    display: flex;
+    gap: 8.62px;
+    align-items: center;
+}
+
+.request__form-checkbox {
+    display: none;
+}
+
+.request__form-checkbox-fake {
+    cursor: pointer;
+}
+
+.request__form-checkbox-fake::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 1px;
+    background-color: var(--color-primary);
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.request__form-checkbox:checked + .request__form-checkbox-fake::before {
+    background-image: url(../icons/check.svg);
+}
+
+.request__form-checkbox-label {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.request__form-submit {
+    margin-top: 39px;
+    float: right;
+    width: 213px;
+    height: 51px;
+    font-size: 13px;
+}
+
+.request__icon-text {
+    display: flex;
+    align-items: center;
+    margin-top: 38.44px;
+    margin-left: 32.5px;
+    gap: 25px;
+}
+
+.request__icon-wrapper {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+}
+
+.request__icon-text-span {
+    color: var(--color-primary);
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    font-size: 18px;
+}
+/* || /Request */

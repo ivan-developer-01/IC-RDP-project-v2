@@ -260,6 +260,82 @@
                     </div>
                 </div>
         </section>
+
+        <section class="section request">
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <!-- The OL's (or UL's, for that matter) markers do not support background-color and some other properties. So we have to make it a div... -->
+                        <!-- (It does however support decimal-leading-zero list style type, which is good) -->
+                        <div class="request__steps-list">
+                            <div class="request__steps-list-item">
+                                <div class="request__steps-list-item-marker">01</div>
+                                Our specialist will arrive for measurements per day <br> contact, or appoint a date convenient to you
+                            </div>
+                            <div class="request__steps-list-item">
+                                <div class="request__steps-list-item-marker">02</div>
+                                Free metering
+                            </div>
+                            <div class="request__steps-list-item">
+                                <div class="request__steps-list-item-marker">03</div>
+                                Free consultation
+                            </div>
+                            <div class="request__steps-list-item">
+                                <div class="request__steps-list-item-marker">04</div>
+                                Get a cost estimate and <br> the timing of your future repairs
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <form class="request__form">
+                            <h4 class="request__form-title">Leave a request for free <br> departure of the master</h4>
+                            <div class="request__form-controls">
+                                <div class="request__form-control">
+                                    <label for="request__form-name" class="request__form-label">Name</label>
+                                    <input
+                                        type="text"
+                                        class="request__form-input"
+                                        id="request__form-name"
+                                        placeholder="What is your name:">
+                                </div>
+                                <div class="request__form-control">
+                                    <label for="request__form-phone" class="request__form-label">Phone</label>
+                                    <input
+                                        type="text"
+                                        class="request__form-input"
+                                        id="request__form-phone"
+                                        placeholder="What is your phone:">
+                                </div>
+                                <div class="request__form-control">
+                                    <label for="request__form-email" class="request__form-label">Email</label>
+                                    <input
+                                        type="text"
+                                        class="request__form-input"
+                                        id="request__form-email"
+                                        placeholder="What is your email:">
+                                </div>
+                            </div>
+                            <div class="request__form-checkbox-labelled">
+                                <label class="request__form-checkbox-label">
+                                    <input type="checkbox" class="request__form-checkbox" checked>
+                                    <span class="request__form-checkbox-fake"></span>
+                                    I agree to the processing of personal data
+                                </label>
+                            </div>
+                            <button class="request__form-submit button button_primary" type="submit">Call the measurer</button>
+                        </form>
+                        <div class="request__icon-text">
+                            <div class="request__icon-wrapper">
+                                <img src="images/request/save-the-cost.svg" alt="" class="request__icon">
+                            </div>
+                            <span class="request__icon-text-span">
+                                Help save 10 - 20% of the <br> cost of materials
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
