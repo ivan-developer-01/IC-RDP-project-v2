@@ -924,6 +924,7 @@ body {
 .our-clients__review-info-block {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 15px;
     padding: 11px 17px;
     color: var(--color-white);
@@ -932,5 +933,7 @@ body {
     background: var(--color-primary);
     box-shadow: 5px 5px 20px var(--color-primary-50);
     text-transform: uppercase;
+    width: 159px;
+    height: 54px;
 }
 /* || /Our clients */
