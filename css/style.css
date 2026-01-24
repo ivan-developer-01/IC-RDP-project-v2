@@ -751,6 +751,7 @@ body {
     width: 213px;
     height: 51px;
     font-size: 13px;
+    border-radius: 0;
 }
 
 .request__icon-text {
@@ -937,3 +938,181 @@ body {
     height: 54px;
 }
 /* || /Our clients */
+
+/* || Any questions */
+.any-questions {
+    --form-height: 445px;
+    height: 954px;
+    background-image: linear-gradient(180deg, rgb(24, 24, 24) 3.47%, rgba(24, 24, 24, 0.8) 100%);
+    margin-top: calc(var(--form-height) / 2 + 132px);
+    position: relative;
+}
+
+.any-questions .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.any-questions__form-wrapper {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.any-questions__form-background {
+    position: absolute;
+    background: url(../images/any-questions/cityflow_background.png);
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    top: -244px;
+    left: 0;
+    z-index: -3;
+    width: 100%;
+    height: 100%;
+    max-height: 263px;
+    overflow: hidden;
+}
+
+.any-questions__form {
+    background-color: var(--color-black-secondary);
+    color: var(--color-white);
+    width: 883px;
+    height: var(--form-height);
+    padding-top: 34px;
+    padding-bottom: 34px;
+    margin-top: calc(var(--form-height) / -2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 47px;
+}
+
+.any-questions__form-title {
+    font-size: 20px;
+    color: var(--color-white);
+    margin: 0;
+}
+
+.any-questions__form-inputs-grid {
+    display: grid;
+    grid-template-areas:
+        "left-area right-area"
+        "main      main";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 58px 48px;
+    width: 516px;
+}
+
+.any-questions__form-control:nth-child(1) {
+    grid-area: left-area;
+}
+
+.any-questions__form-control:nth-child(2) {
+    grid-area: right-area;
+}
+
+.any-questions__form-control:nth-child(3) {
+    grid-area: main;
+}
+
+.any-questions__form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.any-questions__form-label {
+    color: var(--color-white-50);
+}
+
+.any-questions__form-input {
+    appearance: none;
+    border: none;
+    border-bottom: 1px solid var(--color-white-15);
+    background-color: var(--color-black-secondary);
+    color: var(--color-white);
+    width: 100%;
+    padding: 0 0 8px;
+    font-size: 14px;
+}
+
+.any-questions__form-input:focus-visible {
+    outline: none;
+    border-bottom-color: var(--color-white);
+}
+
+.any-questions__form-input::placeholder {
+    color: var(--color-white);
+}
+
+.any-questions__form-checkbox-label {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.any-questions__form-checkbox {
+    display: none;
+}
+
+.any-questions__form-checkbox-fake::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 1px;
+    background-color: var(--color-primary);
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.any-questions__form-checkbox:checked + .any-questions__form-checkbox-fake::before {
+    background-image: url(../icons/check.svg);
+}
+
+.any-questions__form-submit {
+    width: 200px;
+    height: 51px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.any-questions__address {
+    font-family: "Yeseva One", serif;
+    font-size: 20px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    text-align: center;
+    margin-top: 52px;
+}
+
+.any-questions__socials {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 26px;
+}
+
+.any-questions__social {
+    width: 28px;
+    height: 28px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    padding: 8px 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.any-questions__location-map {
+    width: 925px;
+    height: 465px;
+    margin-top: 43px;
+}
+/* || /Any questions */

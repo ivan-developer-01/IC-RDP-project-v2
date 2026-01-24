@@ -448,6 +448,54 @@
                 </ul>
             </div>
         </section>
+
+        <section class="section any-questions">
+            <!-- div, not img to have more precise control -->
+            <div class="any-questions__form-background"></div>
+            <img src="images/any-questions/any-questions_bg.png" alt="any-questions background" class="section__background">
+            <div class="container">
+                <form action="#" class="any-questions__form">
+                    <h2 class="any-questions__form-title title title_h2">Have any questions?</h2>
+                    <div class="any-questions__form-inputs-grid">
+                        <div class="any-questions__form-control">
+                            <label for="any-questions-name" class="any-questions__form-label">Name</label>
+                            <input id="any-questions-name" type="text" class="any-questions__form-input" placeholder="What is your name:">
+                        </div>
+                        <div class="any-questions__form-control">
+                            <label for="any-questions-phone" class="any-questions__form-label">Phone</label>
+                            <input id="any-questions-phone" type="text" class="any-questions__form-input" placeholder="Your phone number:">
+                        </div>
+                        <div class="any-questions__form-control">
+                            <label for="any-questions-question" class="any-questions__form-label">Question</label>
+                            <input id="any-questions-question" type="text" class="any-questions__form-input" placeholder="I want to know:">
+                        </div>
+                    </div>
+                    <label class="any-questions__form-checkbox-label">
+                        <input
+                            type="checkbox"
+                            name="privacy_agreement"
+                            class="any-questions__form-checkbox"
+                            required
+                        >
+                        <span class="any-questions__form-checkbox-fake"></span>
+                        I agree to the processing of personal data
+                    </label>
+                    <button
+                        type="submit"
+                        class="button button_primary any-questions__form-submit"
+                    >
+                        Submit
+                    </button>
+                </form>
+                <!-- </div> -->
+                <address class="any-questions__address">Rostov-on-Don, Nansen St., 239 Shopping Center <br> Decorum Tel +7 (928) 768 32 29</address>
+                <div class="any-questions__socials">
+                    <a href="#" class="any-questions__social"><img src="icons/icon-email.svg" alt="E-mail"></a>
+                    <a href="#" class="any-questions__social"><img src="icons/icon-instagram.svg" alt="Instagram"></a>
+                </div>
+                <img src="images/any-questions/location_map.png" alt="Above location shown on maps" class="any-questions__location-map">
+            </div>
+        </section>
     </main>
 </body>
 </html>
