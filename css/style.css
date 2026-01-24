@@ -175,13 +175,8 @@ body {
 }
 /* || /Global classes */
 
-/* || Header */
-.header {
-    height: 83px;
-    background: var(--color-black);
-}
-
-.header .container {
+/* || Site bar */
+.site-bar .container {
     height: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -189,44 +184,51 @@ body {
     gap: 0;
 }
 
-.header__logo {
+.site-bar__logo {
     margin-right: 120.21px;
 }
 
-.header__nav {
+.site-bar__nav {
     margin-right: 90.36px;
 }
 
-.header__logo {
+.site-bar__logo {
     color: var(--color-primary);
     text-transform: uppercase;
 }
 
-.header__logo,
-.header__phone {
+.site-bar__logo,
+.site-bar__phone {
     white-space: nowrap;
 }
 
-.header__phone {
+.site-bar__phone {
     display: flex;
     gap: 45px;
     align-items: center;
 }
 
-.header__phone-link {
+.site-bar__phone-link {
     color: var(--color-primary);
     text-decoration: none;
     border-bottom: 1px solid var(--color-primary-50);
     transition: border-bottom-color 0.1s;
 }
 
-.header__phone-link:hover {
+.site-bar__phone-link:hover {
     border-bottom-color: var(--color-primary);
 }
 
-.header__phone-button {
+.site-bar__phone-button {
     height: 37px;
     width: 161px;
+}
+/* || /Site bar */
+
+/* || Header */
+.header {
+    height: 83px;
+    background: var(--color-black);
 }
 /* || /Header */
 
@@ -266,7 +268,7 @@ body {
 }
 /* || /Hero */
 
-/* || Completed projects */
+/* || Projects */
 .projects {
     height: 1074px;
 }
@@ -368,7 +370,7 @@ body {
 .projects__slider-image {
     margin-top: 45.36px;
 }
-/* || /Completed projects */
+/* || /Projects */
 
 /* || Online control */
 .online-control {
@@ -1116,3 +1118,10 @@ body {
     margin-top: 43px;
 }
 /* || /Any questions */
+
+/* || Footer */
+.footer {
+    height: 133px;
+    background-color: var(--color-black-secondary);
+}
+/* || /Footer */
