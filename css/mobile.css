@@ -1,0 +1,21 @@
+@media screen and (max-width: 874px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 18px;
+    }
+
+    .site-bar .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .site-bar__nav,
+    .site-bar__phone-button {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+}
