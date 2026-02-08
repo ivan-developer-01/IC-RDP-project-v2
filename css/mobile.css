@@ -1,8 +1,13 @@
 @media screen and (max-width: 375px) {
+    /* || Global classes */
     .container {
         width: 100%;
         max-width: 100%;
         padding: 18px;
+    }
+
+    .title_h1 {
+        font-size: 23px;
     }
 
     .site-bar .container {
@@ -23,8 +28,37 @@
         color: var(--color-white);
         border: none;
     }
+    /* || /Global classes */
 
+    /* || Hero */
+    .hero {
+        height: 476px;
+    }
+
+    .hero__paragraph {
+        font-size: 14px;
+        line-height: 135.8%;
+    }
+
+    .hero__buttons {
+        flex-direction: column;
+        gap: 26px;
+        margin-top: 54px;
+    }
+
+    .hero__button {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .hero__button_primary {
+        box-shadow: none;
+    }
+    /* || /Hero */
+
+    /* || Footer */
     .footer {
         display: none;
     }
+    /* || /Footer */
 }
