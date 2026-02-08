@@ -1,4 +1,4 @@
-@media screen and (max-width: 874px) {
+@media screen and (max-width: 375px) {
     .container {
         width: 100%;
         max-width: 100%;
@@ -10,9 +10,18 @@
         justify-content: space-between;
     }
 
+    .site-bar__logo {
+        margin: 0;
+    }
+
     .site-bar__nav,
     .site-bar__phone-button {
         display: none;
+    }
+
+    .site-bar__phone-link {
+        color: var(--color-white);
+        border: none;
     }
 
     .footer {
