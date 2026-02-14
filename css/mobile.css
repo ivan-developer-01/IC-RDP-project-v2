@@ -10,6 +10,14 @@
         font-size: 23px;
     }
 
+    .title_h2 {
+        font-size: 22px;
+    }
+
+    .title_h3 {
+        font-size: 14px;
+    }
+
     .site-bar .container {
         display: flex;
         justify-content: space-between;
@@ -55,6 +63,96 @@
         box-shadow: none;
     }
     /* || /Hero */
+
+    /* || Projects */
+    .projects {
+        height: 785px;
+    }
+
+    .projects .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects__flexbox {
+        width: 100%;
+    }
+    
+    .projects__title {
+        margin: 0;
+    }
+    
+    .projects__title,
+    .projects__paragraph {
+        text-align: center;
+    }
+    
+    .projects__paragraph {
+        font-size: 11px;
+        max-width: 100%;
+        line-height: 158.5%;
+        margin-top: 37px;
+    }
+
+    .projects__slider-pagination,
+    .projects__slider-tabs {
+        display: none;
+    }
+
+    .projects__project-info {
+        width: 291px;
+        column-gap: 61px;
+        row-gap: 27px;
+        margin-top: 36px;
+    }
+
+    .projects__project-info-value {
+        font-size: 11px;
+        margin-top: 11px;
+    }
+
+    .projects__slider-image {
+        display: none;
+    }
+
+    .projects__mobile-slider {
+        position: relative;
+        margin-top: 75px;
+    }
+
+    .projects__mobile-slider-arrow {
+        position: absolute;
+        top: 50%;
+        translate: 0 -50%;
+        width: 36px;
+        height: 36px;
+        background: var(--color-primary) center no-repeat;
+        border-radius: 100px;
+        /* Is there a digital pointer in mobile devices? There isn't one usually, but there might be! */
+        cursor: pointer;
+    }
+
+    .projects__mobile-slider-arrow-left {
+        left: 14px;
+        background-image: url(../icons/slider-arrow-left.svg);
+    }
+
+    .projects__mobile-slider-arrow-right {
+        right: 14px;
+        background-image: url(../icons/slider-arrow-right.svg);
+    }
+
+    .projects__mobile-slider-image {
+        display: block;
+        width: 100%;
+    }
+    /* || /Projects */
+
+    /* || Online control */
+    .online-control {
+        margin: 0;
+    }
+    /* || /Online control */
 
     /* || Footer */
     .footer {
