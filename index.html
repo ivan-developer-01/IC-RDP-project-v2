@@ -146,9 +146,9 @@
                 </div>
                 <hr class="online-control__hr">
                 <p class="online-control__paragraph">
-                    At each facility, a camera is installed that broadcasts the progress of work on the <br>
-                    clock. At any time, you can go to our website and monitor the progress of work in <br>
-                    your apartment. You can watch the live broadcast from one of our facilities! <br>
+                    At each facility, a camera is installed that broadcasts the progress of work on the <br class="online-control__paragraph-br">
+                    clock. At any time, you can go to our website and monitor the progress of work in <br class="online-control__paragraph-br">
+                    your apartment. You can watch the live broadcast from one of our facilities! <br class="online-control__paragraph-br">
                     Leave a request below and you will receive a link to the broadcast.
                 </p>
                 <form action="#" class="online-control__form">
@@ -177,23 +177,32 @@
                                 >
                             </div>
                         </div>
+                        <label class="online-control__form-checkbox-label online-control__form-checkbox-label_mobile">
+                            <input
+                                type="checkbox"
+                                name="privacy_agreement"
+                                class="online-control__form-checkbox"
+                                required
+                            >
+                            <!-- This is what will be shown instead of the checkbox, to be able to style it with a custom style. -->
+                            <span class="online-control__form-checkbox-fake"></span>
+                            I agree to the processing of personal data
+                        </label>
                         <button class="online-control__form-submit button button_primary">Submit</button>
                     </div>
-                    <div class="online-control__form-row">
-                        <div>
-                            <label class="online-control__form-checkbox-label">
-                                <!-- Warning: The following checkbox is hidden (display: none in CSS) because the layout has a custom layout. When handling the form submit, you would need to handle the `required` property yourself because there is no guarantee that a browser will show the required warning if it's hidden (at least Firefox failed to do this). -->
-                                <input
-                                    type="checkbox"
-                                    name="privacy_agreement"
-                                    class="online-control__form-checkbox"
-                                    required
-                                >
-                                <!-- This is what will be shown instead of the checkbox, to be able to style it with a custom style. -->
-                                <span class="online-control__form-checkbox-fake"></span>
-                                I agree to the processing of personal data
-                            </label>
-                        </div>
+                    <div class="online-control__form-row hidden_mobile">
+                        <label class="online-control__form-checkbox-label">
+                            <!-- Warning: The following checkbox is hidden (display: none in CSS) because the layout has a custom layout. When handling the form submit, you would need to handle the `required` property yourself because there is no guarantee that a browser will show the required warning if it's hidden (at least Firefox failed to do this). -->
+                            <input
+                                type="checkbox"
+                                name="privacy_agreement"
+                                class="online-control__form-checkbox"
+                                required
+                            >
+                            <!-- This is what will be shown instead of the checkbox, to be able to style it with a custom style. -->
+                            <span class="online-control__form-checkbox-fake"></span>
+                            I agree to the processing of personal data
+                        </label>
                     </div>
                 </form>
             </div>

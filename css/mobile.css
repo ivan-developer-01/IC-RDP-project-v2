@@ -18,6 +18,14 @@
         font-size: 14px;
     }
 
+    .hidden_mobile {
+        display: none;
+    }
+
+    .button {
+        font-size: 13px;
+    }
+
     .site-bar .container {
         display: flex;
         justify-content: space-between;
@@ -152,6 +160,93 @@
     /* || Online control */
     .online-control {
         margin: 0;
+        background: var(--color-black);
+        color: var(--color-white);
+        position: relative;
+        height: 826px;
+    }
+
+    .online-control__title {
+        font-size: 22px;
+    }
+
+    .online-control__video-image {
+        width: 100%;
+    }
+
+    .online-control__video-play-button {
+        width: 37px;
+        height: 37px;
+    }
+
+    .online-control__video-play-icon {
+        width: 12px;
+        height: 12px;
+        /* For some reason, without translate the icon looks a bit off? Very weird. */
+        translate: 0 0;
+    }
+
+    .online-control__hr {
+        margin-top: 28px;
+    }
+
+    .online-control__paragraph {
+        margin-top: 21px;
+        font-size: 11px;
+        line-height: 169.8%;
+        color: var(--color-white);
+    }
+
+    .online-control__paragraph-br {
+        display: none;
+    }
+
+    .online-control__form {
+        width: 100%;
+    }
+
+    .online-control__form-row,
+    .online-control__form-inputs {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .online-control__form-row {
+        gap: 0;
+    }
+
+    .online-control__form-inputs {
+        gap: 63px;
+    }
+
+    .online-control__form-input-label {
+        color: var(--color-white-50);
+    }
+
+    .online-control__form-input,
+    .online-control__form-input::placeholder {
+        color: var(--color-white);
+    }
+
+    .online-control__form-input {
+        width: 100%;
+        background: inherit;
+        border-bottom-color: var(--color-lightergray);
+    }
+
+    .online-control__form-checkbox-label_mobile {
+        margin-top: 26px;
+        color: var(--color-white);
+    }
+
+    .online-control__form-submit {
+        border-radius: 0;
+        /* For some reason, width: 100% made it the width of the viewport, not the width of the parent element. */
+        width: 90%;
+        box-shadow: none;
+        position: absolute;
+        bottom: calc(-49px / 2);
+        padding: 0;
     }
     /* || /Online control */
 

@@ -8,8 +8,9 @@
     --color-white-15: rgba(255, 255, 255, 0.15);
     --color-white-30: rgba(255, 255, 255, 0.3);
     --color-white-50: rgba(255, 255, 255, 0.5);
-    --color-gray: #363636;
-    --color-grayish: #959595;
+    --color-darkgray: #363636;
+    --color-lightgray: #959595;
+    --color-lightergray: #C3C3C3;
     --color-gray-30: rgba(54, 54, 54, 0.3);
     --color-gray-50: rgba(54, 54, 54, 0.5);
     --color-black: #131313;
@@ -434,7 +435,7 @@ body {
     font-size: 18px;
     line-height: 204.6%;
     text-align: center;
-    color: var(--color-gray);
+    color: var(--color-darkgray);
     margin: 0;
     margin-top: 22.6px;
 }
@@ -471,7 +472,7 @@ body {
     border: none;
     border-bottom: 1px solid var(--color-gray-30);
     font-size: 14px;
-    color: var(--color-gray);
+    color: var(--color-darkgray);
     width: 231px;
     padding: 0;
     padding-bottom: 8px;
@@ -488,7 +489,7 @@ body {
 }
 
 .online-control__form-input::placeholder {
-    color: var(--color-gray);
+    color: var(--color-darkgray);
 }
 
 .online-control__form-checkbox-label {
@@ -639,7 +640,7 @@ body {
     align-items: center;
     gap: 9px;
     font-size: 14px;
-    color: var(--color-gray);
+    color: var(--color-darkgray);
 }
 
 .request__steps-list-item-marker {
@@ -912,7 +913,7 @@ body {
 
 .our-clients__review-text {
     font-size: 13px;
-    color: var(--color-grayish);
+    color: var(--color-lightgray);
     line-height: 180%;
     white-space: pre-line;
     overflow-wrap: break-word;
