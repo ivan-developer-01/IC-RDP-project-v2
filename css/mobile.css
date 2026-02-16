@@ -250,6 +250,50 @@
     }
     /* || /Online control */
 
+    /* || Types of repair */
+    .types-of-repair {
+        margin-top: 83px;
+        height: unset;
+    }
+
+    .types-of-repair__title {
+        font-size: 22px;
+    }
+
+    .types-of-repair__icon {
+        margin-top: 17px;
+    }
+
+    .types-of-repair__list {
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 59px;
+    }
+
+    .types-of-repair__item {
+        width: 100%;
+    }
+
+    .types-of-repair__item-image {
+        width: 100%;
+    }
+
+    .types-of-repair__item-description {
+        margin: -145px 0 0 0;
+        box-shadow: 5px 10px 20px var(--color-black-05);
+        width: 270px;
+        padding-bottom: 40px;
+    }
+
+    .types-of-repair__item-price {
+        margin-left: 0;
+        margin-top: -20px;
+        width: 190px;
+        height: 40px;
+        font-size: 15px;
+    }
+    /* || /Types of repair */
+
     /* || Footer */
     .footer {
         display: none;
