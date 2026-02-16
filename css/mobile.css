@@ -294,9 +294,10 @@
     }
     /* || /Types of repair */
 
-    /* || Footer */
+    /* Hiding some sections that do not exist in the mobile layout */
+    .request,
+    .our-clients,
     .footer {
         display: none;
     }
-    /* || /Footer */
 }
