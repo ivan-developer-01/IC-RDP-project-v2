@@ -311,6 +311,10 @@ body {
     margin-top: 9px;
 }
 
+.projects__mobile-slider {
+    display: none;
+}
+
 .projects__slider-pagination {
     display: flex;
     gap: 29.5px;

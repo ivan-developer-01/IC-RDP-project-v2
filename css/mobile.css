@@ -116,6 +116,7 @@
     }
 
     .projects__mobile-slider {
+        display: block;
         position: relative;
         margin-top: 75px;
     }
