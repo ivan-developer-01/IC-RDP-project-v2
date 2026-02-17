@@ -1,3 +1,7 @@
+.mobile-slider {
+    display: none;
+}
+
 @media screen and (max-width: 375px) {
     /* || Global classes */
     .container {
@@ -7,15 +11,15 @@
     }
 
     .title_h1 {
-        font-size: 23px;
+        --font-size: 23px;
     }
 
     .title_h2 {
-        font-size: 22px;
+        --font-size: 22px;
     }
 
     .title_h3 {
-        font-size: 14px;
+        --font-size: 14px;
     }
 
     .hidden_mobile {
@@ -296,6 +300,34 @@
         font-size: 15px;
     }
     /* || /Types of repair */
+
+    /* || We realize */
+    .we-realize {
+        background: var(--color-white);
+        margin-top: 55px;
+        height: unset;
+    }
+
+    .we-realize .container {
+        display: block;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .we-realize__images,
+    .we-realize__tabs {
+        display: none;
+    }
+
+    .we-realize__title {
+        text-align: center;
+        margin: 0;
+    }
+
+    .we-realize__mobile-slider {
+        margin-top: 39px;
+    }
+    /* || /We realize */
 
     /* Hiding some sections that do not exist in the mobile layout */
     .request,
