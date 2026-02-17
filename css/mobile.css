@@ -44,6 +44,38 @@
         color: var(--color-white);
         border: none;
     }
+
+    .mobile-slider {
+        display: block;
+        position: relative;
+    }
+
+    .mobile-slider__arrow {
+        position: absolute;
+        top: 50%;
+        translate: 0 -50%;
+        width: 36px;
+        height: 36px;
+        background: var(--color-primary) center no-repeat;
+        border-radius: 100px;
+        /* Is there a digital pointer in mobile devices? There isn't one usually, but there might be! */
+        cursor: pointer;
+    }
+
+    .mobile-slider__arrow-left {
+        left: 14px;
+        background-image: url(../icons/slider-arrow-left.svg);
+    }
+
+    .mobile-slider__arrow-right {
+        right: 14px;
+        background-image: url(../icons/slider-arrow-right.svg);
+    }
+
+    .mobile-slider__image {
+        display: block;
+        width: 100%;
+    }
     /* || /Global classes */
 
     /* || Hero */
@@ -124,36 +156,7 @@
     }
 
     .projects__mobile-slider {
-        display: block;
-        position: relative;
         margin-top: 75px;
-    }
-
-    .projects__mobile-slider-arrow {
-        position: absolute;
-        top: 50%;
-        translate: 0 -50%;
-        width: 36px;
-        height: 36px;
-        background: var(--color-primary) center no-repeat;
-        border-radius: 100px;
-        /* Is there a digital pointer in mobile devices? There isn't one usually, but there might be! */
-        cursor: pointer;
-    }
-
-    .projects__mobile-slider-arrow-left {
-        left: 14px;
-        background-image: url(../icons/slider-arrow-left.svg);
-    }
-
-    .projects__mobile-slider-arrow-right {
-        right: 14px;
-        background-image: url(../icons/slider-arrow-right.svg);
-    }
-
-    .projects__mobile-slider-image {
-        display: block;
-        width: 100%;
     }
     /* || /Projects */
 
