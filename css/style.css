@@ -1100,7 +1100,7 @@ body {
 
 .any-questions__socials {
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 15px;
     margin-top: 26px;
 }
