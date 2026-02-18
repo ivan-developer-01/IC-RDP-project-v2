@@ -2,6 +2,10 @@
     display: none;
 }
 
+.online-control__form-checkbox-label_mobile {
+    display: none;
+}
+
 @media screen and (max-width: 375px) {
     /* || Global classes */
     .container {
@@ -242,6 +246,7 @@
     }
 
     .online-control__form-checkbox-label_mobile {
+        display: block;
         margin-top: 26px;
         color: var(--color-white);
     }
