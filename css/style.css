@@ -37,13 +37,6 @@ body {
 }
 
 /* || Global classes */
-.section {
-    /*  //  flow-root is necessary for the margins to work correctly */
-    /* ? Actually, I am not quite sure it is necessary. */
-    /* TODO: Check the above when finishing the layout */
-    display: flow-root;
-}
-
 .section:has(.section__background) {
     position: relative;
 }

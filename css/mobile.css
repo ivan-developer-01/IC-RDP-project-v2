@@ -319,6 +319,10 @@
         padding-bottom: 0;
     }
 
+    .we-realize__background {
+        display: none;
+    }
+
     .we-realize__images,
     .we-realize__tabs {
         display: none;
